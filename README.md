@@ -44,7 +44,7 @@ These instructions will get you a copy of the project up and running on your loc
     docker-compose up -d
     ```
 2. Navigate to [Keycloak Admin UI Console](http://localhost:9090 "Keycloak Admin UI Console")
-3. Create a new Real and name ut ```Alibou``` or update the ```application.yml``` file and specify your Realm name
+3. Create a new Real and name ut ```Daemon``` or update the ```application.yml``` file and specify your Realm name
 4. Create Roles
 5. Create Users
 6. Assign roles to users

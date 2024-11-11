@@ -1,4 +1,4 @@
-package com.alibou.keycloak;
+package com.ssw.keycloak;
 
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoController {
 
     @GetMapping
-    @PreAuthorize("hasRole('client_user')")
+    @PreAuthorize("hasRole('role_view-clients')")
     public String hello() {
         return "Hello from Spring boot & Keycloak";
     }
 
-    @GetMapping("/hello-2")
+    @GetMapping("/hello")
     @PreAuthorize("hasRole('client_admin')")
     public String hello2() {
         return "Hello from Spring boot & Keycloak - ADMIN";
